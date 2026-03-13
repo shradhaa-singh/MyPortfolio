@@ -23,9 +23,7 @@ This portfolio is built using **React**, **Vite**, and **Tailwind CSS v4**. This
 
 1. **Clone the repository:**
    
-   git clone [https://github.com/shradhaa-singh/myPortfolio.git](https://github.com/shradhaa-singh/myPortfolio.git)
-
-   cd myPortfolio
+   git clone [https://github.com/shradhaa-singh/myPortfolio.git](https://github.com/shradhaa-singh/MyPortfolio.git)
 
 2. **Install Dependencies:**
 
