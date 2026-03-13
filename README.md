@@ -46,5 +46,7 @@ This portfolio is built using **React**, **Vite**, and **Tailwind CSS v4**. This
 
 Feel free to reach out if you have any questions or want to collaborate!
 Email: [shradhasingh72558@gmail.com]
+Linkedin: [https://www.linkedin.com/in/shradhaasingh/]
+Portfolio: [https://myportfolio-pi-inky-79.vercel.app]
 
 Build with ❤️ by Shradha
