@@ -57,8 +57,8 @@ const HeroSection = () => {
           transition={{ delay: 0.75 }}
           className="text-muted-foreground/80 max-w-lg text-sm md:text-base leading-relaxed mb-10"
         >
-          Computer Science (AI/ML) student passionate about machine learning, data science, and building applications 
-          that turn complex data into meaningful insights.
+          {/* Computer Science (AI/ML) student passionate about machine learning, data science, and building applications 
+          that turn complex data into meaningful insights. */}
         </motion.p>
 
         <motion.div
