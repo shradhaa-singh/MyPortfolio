@@ -1,13 +1,459 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>myportfolio</title>
+    <meta
+      name="description"
+      content="Portfolio — software engineer focused on machine learning, systems, and thoughtful product engineering."
+    />
+    <title>Shradha Singh — Portfolio</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="site">
+      <header class="nav" id="site-nav">
+        <div class="container nav__bar">
+          <a href="#" class="nav__brand">&lt;Portfolio /&gt;</a>
+          <nav class="nav__links" aria-label="Primary">
+            <a href="#about" class="nav__link"
+              ><span class="nav__link-num">01.</span>About</a
+            >
+            <a href="#skills" class="nav__link"
+              ><span class="nav__link-num">02.</span>Skills</a
+            >
+            <a href="#projects" class="nav__link"
+              ><span class="nav__link-num">03.</span>Projects</a
+            >
+            <a href="#learning" class="nav__link"
+              ><span class="nav__link-num">04.</span>Learning</a
+            >
+            <a href="#resume" class="nav__link"
+              ><span class="nav__link-num">05.</span>Resume</a
+            >
+            <a href="#contact" class="nav__link"
+              ><span class="nav__link-num">06.</span>Contact</a
+            >
+          </nav>
+          <button
+            type="button"
+            class="nav__menu-btn"
+            aria-expanded="false"
+            aria-controls="nav-drawer"
+            aria-label="Open menu"
+          >
+            <svg class="icon icon--24 nav__icon--open" aria-hidden="true">
+              <use href="assets/icons/icons.svg#icon-menu" />
+            </svg>
+            <svg class="icon icon--24 nav__icon--close" aria-hidden="true">
+              <use href="assets/icons/icons.svg#icon-x" />
+            </svg>
+          </button>
+        </div>
+        <div class="nav__drawer" id="nav-drawer">
+          <div class="nav__drawer-inner container">
+            <a href="#about" class="nav__link"
+              ><span class="nav__link-num">01.</span>About</a
+            >
+            <a href="#skills" class="nav__link"
+              ><span class="nav__link-num">02.</span>Skills</a
+            >
+            <a href="#projects" class="nav__link"
+              ><span class="nav__link-num">03.</span>Projects</a
+            >
+            <a href="#learning" class="nav__link"
+              ><span class="nav__link-num">04.</span>Learning</a
+            >
+            <a href="#resume" class="nav__link"
+              ><span class="nav__link-num">05.</span>Resume</a
+            >
+            <a href="#contact" class="nav__link"
+              ><span class="nav__link-num">06.</span>Contact</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" id="top" aria-label="Introduction">
+          <div class="hero__bg-grid" aria-hidden="true"></div>
+          <div class="hero__glow hero__glow--tr" aria-hidden="true"></div>
+          <div class="hero__glow hero__glow--bl" aria-hidden="true"></div>
+          <div class="container hero__inner max-w-2xl">
+            <p class="hero__eyebrow">Hi, my name is</p>
+            <h1 class="hero__title">
+              <span class="glow-text">Shradha Singh</span>
+            </h1>
+            <p class="hero__tagline">I build things with code and curiosity.</p>
+            <p class="hero__roles">
+              Software engineer with a focus on machine learning, reliable systems, and
+              interfaces that feel intentional. I like problems that sit at the edge of
+              research and product.
+            </p>
+            <div class="hero__spacer"></div>
+            <div class="hero__actions">
+              <a href="#projects" class="btn btn--primary">View Projects</a>
+              <a href="assets/resume.pdf" class="btn btn--outline-accent" download
+                ><svg class="icon icon--18" aria-hidden="true">
+                  <use href="assets/icons/icons.svg#icon-file-down" /></svg
+                >Download Resume</a
+              >
+            </div>
+          </div>
+          <div class="hero__scroll">
+            <a href="#about" aria-label="Scroll to about">
+              <svg class="icon icon--28" aria-hidden="true">
+                <use href="assets/icons/icons.svg#icon-arrow-down" />
+              </svg>
+            </a>
+          </div>
+        </section>
+
+        <section id="about" class="section">
+          <div class="container max-w-4xl mx-auto">
+            <p class="section__kicker">01. About</p>
+            <h2 class="section__title">A little about me</h2>
+            <p class="section__lead">
+              I enjoy turning messy requirements into clear software — from notebooks and
+              experiments to APIs and polished UI.
+            </p>
+            <div class="about-grid">
+              <article class="feature-card glass glow-border">
+                <div class="feature-card__icon">
+                  <svg class="icon icon--28" aria-hidden="true">
+                    <use href="assets/icons/icons.svg#icon-brain" />
+                  </svg>
+                </div>
+                <h3 class="feature-card__title">Machine Learning</h3>
+                <p class="feature-card__text">
+                  Training, evaluation, and shipping models with an eye on data quality and
+                  real-world constraints.
+                </p>
+              </article>
+              <article class="feature-card glass glow-border">
+                <div class="feature-card__icon">
+                  <svg class="icon icon--28" aria-hidden="true">
+                    <use href="assets/icons/icons.svg#icon-code" />
+                  </svg>
+                </div>
+                <h3 class="feature-card__title">Engineering</h3>
+                <p class="feature-card__text">
+                  Clean architecture, testing, and performance so features stay maintainable
+                  as they grow.
+                </p>
+              </article>
+              <article class="feature-card glass glow-border">
+                <div class="feature-card__icon">
+                  <svg class="icon icon--28" aria-hidden="true">
+                    <use href="assets/icons/icons.svg#icon-lightbulb" />
+                  </svg>
+                </div>
+                <h3 class="feature-card__title">Product sense</h3>
+                <p class="feature-card__text">
+                  Bridging stakeholders, design, and implementation to ship outcomes, not
+                  just tickets.
+                </p>
+              </article>
+            </div>
+            <p class="about__bio">
+              When I am not coding, I am usually reading, sketching ideas, or chasing a new
+              tool or paper. I believe the best work happens when you care about both the
+              craft and the people using what you build.
+            </p>
+          </div>
+        </section>
+
+        <section id="skills" class="section border-t">
+          <div class="container max-w-5xl mx-auto">
+            <p class="section__kicker">02. Skills</p>
+            <h2 class="section__title">What I work with</h2>
+            <p class="section__lead">
+              A snapshot of languages, frameworks, and areas I reach for most often.
+            </p>
+            <div class="skills-grid">
+              <div class="skill-panel glass glow-border">
+                <p class="skill-panel__label">Languages</p>
+                <div class="skill-tags">
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">TypeScript</span>
+                  <span class="skill-tag">JavaScript</span>
+                  <span class="skill-tag">SQL</span>
+                </div>
+              </div>
+              <div class="skill-panel glass glow-border">
+                <p class="skill-panel__label">ML &amp; data</p>
+                <div class="skill-tags">
+                  <span class="skill-tag">PyTorch</span>
+                  <span class="skill-tag">scikit-learn</span>
+                  <span class="skill-tag">NumPy</span>
+                  <span class="skill-tag">pandas</span>
+                </div>
+              </div>
+              <div class="skill-panel glass glow-border">
+                <p class="skill-panel__label">Web</p>
+                <div class="skill-tags">
+                  <span class="skill-tag">React</span>
+                  <span class="skill-tag">Node.js</span>
+                  <span class="skill-tag">HTML / CSS</span>
+                  <span class="skill-tag">REST APIs</span>
+                </div>
+              </div>
+              <div class="skill-panel glass glow-border">
+                <p class="skill-panel__label">Tools</p>
+                <div class="skill-tags">
+                  <span class="skill-tag">Git</span>
+                  <span class="skill-tag">Docker</span>
+                  <span class="skill-tag">Linux</span>
+                  <span class="skill-tag">CI/CD</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="section border-t">
+          <div class="container max-w-5xl mx-auto">
+            <p class="section__kicker">03. Projects</p>
+            <h2 class="section__title">Selected work</h2>
+            <p class="section__lead">
+              Featured builds and experiments. Add cards here as you ship new work — the
+              layout is ready for a full grid.
+            </p>
+            <div class="projects-grid" aria-live="polite">
+              <p class="projects-grid__placeholder text-muted max-w-xl">
+                No projects listed yet. Drop in project cards using the same structure as
+                your React portfolio when you are ready.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="learning" class="section border-t">
+          <div class="container max-w-5xl mx-auto">
+            <p class="section__kicker">04. Learning</p>
+            <h2 class="section__title">Always leveling up</h2>
+            <p class="section__lead">
+              Topics and resources I am actively exploring or revisiting.
+            </p>
+            <div class="learning-grid">
+              <article class="learning-card glass glow-border">
+                <div class="learning-card__icon">
+                  <svg class="icon icon--20" aria-hidden="true">
+                    <use href="assets/icons/icons.svg#icon-target" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="learning-card__title">Deep learning systems</h3>
+                  <p class="learning-card__text">
+                    Efficient training loops, deployment patterns, and monitoring for models
+                    in production.
+                  </p>
+                </div>
+              </article>
+              <article class="learning-card glass glow-border">
+                <div class="learning-card__icon">
+                  <svg class="icon icon--20" aria-hidden="true">
+                    <use href="assets/icons/icons.svg#icon-sparkles" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="learning-card__title">Modern frontends</h3>
+                  <p class="learning-card__text">
+                    Accessible, performant UI — from semantic HTML and CSS to component
+                    architecture.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="resume" class="section border-t">
+          <div class="container max-w-4xl mx-auto text-center">
+            <p class="section__kicker">05. Resume</p>
+            <h2 class="section__title section__title--tight">Get my resume</h2>
+            <p class="section__lead mx-auto">
+              PDF summary of experience and education. Place your file at
+              <span class="font-mono text-primary">assets/resume.pdf</span> for the
+              download link to work.
+            </p>
+            <div class="resume-panel glass glow-border">
+              <div class="resume-panel__thumb" aria-hidden="true">
+                <svg class="icon icon--32" aria-hidden="true">
+                  <use href="assets/icons/icons.svg#icon-file-down" />
+                </svg>
+              </div>
+              <p class="resume-panel__name">Resume.pdf</p>
+              <p class="resume-panel__meta">Updated as you replace the file in assets/</p>
+              <div class="resume-panel__actions">
+                <a href="assets/resume.pdf" class="btn btn--primary btn--lg-pad" download
+                  >Download PDF</a
+                >
+                <a
+                  href="https://github.com"
+                  class="btn btn--outline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg class="icon icon--18" aria-hidden="true">
+                    <use href="assets/icons/icons.svg#icon-github" /></svg
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="section border-t">
+          <div class="container max-w-4xl mx-auto text-center">
+            <p class="section__kicker">06. Contact</p>
+            <h2 class="section__title">Let’s connect</h2>
+            <p class="contact__lead">
+              Open to interesting roles, collaborations, and good conversations about ML or
+              product engineering. Replace the links below with your profiles.
+            </p>
+            <div class="contact-grid">
+              <a href="mailto:you@example.com" class="contact-card glass glow-border">
+                <svg class="icon icon--28" aria-hidden="true">
+                  <use href="assets/icons/icons.svg#icon-mail" />
+                </svg>
+                <span class="contact-card__label">Email</span>
+              </a>
+              <a
+                href="https://linkedin.com"
+                class="contact-card glass glow-border"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="icon icon--28" aria-hidden="true">
+                  <use href="assets/icons/icons.svg#icon-linkedin" />
+                </svg>
+                <span class="contact-card__label">LinkedIn</span>
+              </a>
+              <a
+                href="https://github.com"
+                class="contact-card glass glow-border"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="icon icon--28" aria-hidden="true">
+                  <use href="assets/icons/icons.svg#icon-github" />
+                </svg>
+                <span class="contact-card__label">GitHub</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p class="site-footer__text">
+          Built with HTML &amp; CSS · <span class="text-primary">Shradha Singh</span> ·
+          <span id="year"></span>
+        </p>
+      </footer>
+
+      <div class="theme-dock" id="theme-dock">
+        <div
+          class="theme-dock__panel glass glow-border"
+          id="theme-panel"
+          role="dialog"
+          aria-label="Theme"
+        >
+          <p class="theme-dock__label">Theme</p>
+          <div class="theme-dock__list">
+            <button
+              type="button"
+              class="theme-dock__option"
+              data-theme-option
+              data-theme-index="0"
+            >
+              <span
+                class="theme-dock__swatch theme-dock__swatch--cyber-teal"
+                aria-hidden="true"
+              ></span>
+              Cyber Teal
+            </button>
+            <button
+              type="button"
+              class="theme-dock__option"
+              data-theme-option
+              data-theme-index="1"
+            >
+              <span
+                class="theme-dock__swatch theme-dock__swatch--neon-violet"
+                aria-hidden="true"
+              ></span>
+              Neon Violet
+            </button>
+            <button
+              type="button"
+              class="theme-dock__option"
+              data-theme-option
+              data-theme-index="2"
+            >
+              <span
+                class="theme-dock__swatch theme-dock__swatch--amber-glow"
+                aria-hidden="true"
+              ></span>
+              Amber Glow
+            </button>
+            <button
+              type="button"
+              class="theme-dock__option"
+              data-theme-option
+              data-theme-index="3"
+            >
+              <span
+                class="theme-dock__swatch theme-dock__swatch--rose-pink"
+                aria-hidden="true"
+              ></span>
+              Rose Pink
+            </button>
+            <button
+              type="button"
+              class="theme-dock__option"
+              data-theme-option
+              data-theme-index="4"
+            >
+              <span
+                class="theme-dock__swatch theme-dock__swatch--emerald"
+                aria-hidden="true"
+              ></span>
+              Emerald
+            </button>
+            <button
+              type="button"
+              class="theme-dock__option"
+              data-theme-option
+              data-theme-index="5"
+            >
+              <span
+                class="theme-dock__swatch theme-dock__swatch--arctic-light"
+                aria-hidden="true"
+              ></span>
+              Arctic Light
+            </button>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="theme-dock__fab glass glow-border"
+          id="theme-fab"
+          aria-expanded="false"
+          aria-controls="theme-panel"
+          aria-label="Choose color theme"
+        >
+          <svg class="icon icon--20" aria-hidden="true">
+            <use href="assets/icons/icons.svg#icon-palette" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
