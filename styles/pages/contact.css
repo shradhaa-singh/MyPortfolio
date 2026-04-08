@@ -1,0 +1,12 @@
+.contact-card {
+  text-decoration: none;
+  color: var(--text);
+  text-align: center;
+  font-weight: 600;
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}

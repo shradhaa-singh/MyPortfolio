@@ -1,0 +1,27 @@
+.about-page .soft {
+  display: block;
+  color: var(--muted);
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-family: var(--font-body);
+  margin-bottom: 0.5rem;
+}
+
+.about-page .name {
+  display: block;
+  background: linear-gradient(110deg, var(--text), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.about-page .lead {
+  margin-top: 0.8rem;
+  font-size: clamp(1.1rem, 2.5vw, 1.45rem);
+}
+
+.cta-row {
+  margin-top: 1.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}

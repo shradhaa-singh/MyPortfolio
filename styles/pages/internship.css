@@ -1,0 +1,7 @@
+.internship-page .timeline-item {
+  border-left: 4px solid var(--accent-2);
+}
+
+.internship-page .timeline-item h3 {
+  color: color-mix(in srgb, var(--accent-2) 76%, var(--text));
+}

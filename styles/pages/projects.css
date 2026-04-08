@@ -1,0 +1,32 @@
+.projects-page .project-card {
+  border-left: 4px solid var(--accent);
+}
+
+.projects-page .project-card h3 {
+  color: var(--accent);
+}
+
+.projects-page .project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.9rem;
+}
+
+.projects-page .project-link {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.86rem;
+  font-weight: 600;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--bg-soft) 70%, transparent);
+  border-radius: 999px;
+  padding: 0.42rem 0.75rem;
+  transition: transform var(--transition), border-color var(--transition), color var(--transition);
+}
+
+.projects-page .project-link:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  color: var(--accent);
+}

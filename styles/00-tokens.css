@@ -1,0 +1,54 @@
+:root {
+  --font-heading: "Fraunces", serif;
+  --font-body: "Sora", sans-serif;
+  --radius: 1.2rem;
+  --radius-sm: 0.9rem;
+  --nav-height: 4.4rem;
+  --shadow: 0 18px 60px -30px rgb(0 0 0 / 0.6);
+  --transition: 220ms ease;
+}
+
+html[data-theme="ocean"] {
+  --bg: #06121f;
+  --bg-elev: #0f1f34;
+  --bg-soft: #152841;
+  --text: #ecf4ff;
+  --muted: #a8bfdc;
+  --line: #2a4260;
+  --accent: #66d7ff;
+  --accent-2: #7fffd4;
+}
+
+html[data-theme="sunset"] {
+  --bg: #1a0d0d;
+  --bg-elev: #2a1410;
+  --bg-soft: #3b1b18;
+  --text: #ffefe7;
+  --muted: #e5b9a5;
+  --line: #5f2a22;
+  --accent: #ff9e66;
+  --accent-2: #ffd066;
+}
+
+html[data-theme="forest"] {
+  --bg: #07150f;
+  --bg-elev: #10231a;
+  --bg-soft: #183428;
+  --text: #effff4;
+  --muted: #b6d9c2;
+  --line: #2a5440;
+  --accent: #7de3a8;
+  --accent-2: #8de9dc;
+}
+
+html[data-theme="paper"] {
+  --bg: #f6f0e6;
+  --bg-elev: #fffaf3;
+  --bg-soft: #efe6d8;
+  --text: #2f261f;
+  --muted: #6e5f54;
+  --line: #d7c9b6;
+  --accent: #1f7a8c;
+  --accent-2: #db6c3f;
+  --shadow: 0 20px 45px -30px rgb(79 56 38 / 0.45);
+}

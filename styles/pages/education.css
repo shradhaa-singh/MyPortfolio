@@ -1,0 +1,7 @@
+.education-page .timeline-item {
+  border-top: 2px dashed var(--line);
+}
+
+.education-page .timeline-item h3 {
+  color: var(--accent);
+}
