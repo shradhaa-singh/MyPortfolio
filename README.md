@@ -1,95 +1,91 @@
-🌐 My Portfolio
+# Shradha Singh Portfolio
 
-A modern and responsive personal portfolio website built using HTML, CSS, and JavaScript. It showcases my skills, projects, education, and experience in a clean and structured way.
+Personal portfolio website built with HTML, CSS, and JavaScript. It presents my background, skills, coding profiles, projects, internship experience, education, and contact links in a responsive single-page layout.
 
-⸻
+## Overview
 
-🚀 Features
-	•	🎨 Clean and aesthetic UI
-	•	📱 Fully responsive design
-	•	🌗 Light/Dark theme toggle
-	•	🧑‍💻 About section
-	•	🛠️ Skills section
-	•	📂 Projects section
-	•	🎓 Education section
-	•	💼 Internship/Experience section
-	•	📞 Contact section
+This project is a static portfolio site with:
 
-⸻
+- A section-based one-page layout
+- A responsive navigation bar for desktop and mobile
+- Multiple visual themes: `Ocean`, `Sunset`, `Forest`, `Paper`, and `Pastel`
+- Theme preference saved in local storage
+- Dedicated sections for About, Skills, Coding Profiles, Projects, Internship, Education, and Contact
 
-🛠️ Tech Stack
-	•	HTML5
-	•	CSS3 (Modular structure)
-	•	JavaScript
+## Tech Stack
 
-⸻
+- HTML5
+- CSS3
+- JavaScript
 
-📁 Project Structure
+## Project Structure
+
+```text
 .
 ├── index.html
-├── assets/
-│   ├── images/favicon.svg
+├── README.md
+├── assets
+│   ├── icons
+│   │   └── icons.svg
+│   ├── images
+│   │   └── favicon.svg
+│   ├── pythonfordatascience.jpeg
 │   └── resume.pdf
-├── scripts/
+├── scripts
 │   └── about.js
-└── styles/
+└── styles
     ├── 00-tokens.css
     ├── 01-base.css
     ├── 02-navbar.css
     ├── 03-theme-switcher.css
-    └── pages/
+    └── pages
         ├── about.css
-        ├── skills.css
-        ├── projects.css
-        ├── internship.css
+        ├── contact.css
         ├── education.css
-        └── contact.css
+        ├── internship.css
+        ├── profiles.css
+        ├── projects.css
+        └── skills.css
+```
 
-⸻
+## Styling Architecture
 
-💡 Architecture
-	•	assets/ → Images and resume
-	•	scripts/ → JavaScript files
-	•	styles/ → Organized CSS files
+- `styles/00-tokens.css`: shared design tokens and theme palettes
+- `styles/01-base.css`: global layout, typography, spacing, and shared components
+- `styles/02-navbar.css`: desktop and mobile navigation
+- `styles/03-theme-switcher.css`: floating theme selector
+- `styles/pages/*.css`: section-specific styling
 
-CSS Structure:
-	•	00-tokens.css → Variables (colors, fonts, spacing)
-	•	01-base.css → Global styles
-	•	02-navbar.css → Navbar styling
-	•	03-theme-switcher.css → Theme toggle styles
-	•	pages/ → Page-specific styles
+## JavaScript
 
-⸻
+`scripts/about.js` handles:
 
-💻 How to Run
-	1.	Clone the repository
-  git clone https://github.com/shradhaa-singh/MyPortfolio.git
+- Theme switching
+- Theme persistence with `localStorage`
+- Updating the browser `theme-color`
+- Mobile navigation toggle
+- Active section highlighting
+- Footer year rendering
 
-  2.	Open the folder
+## Running Locally
 
-	3.	Run the project
+This is a static site, so no build step is required.
 
-	•	Open index.html in your browser
-	•	OR use Live Server in VS Code
+1. Clone the repository:
 
-⸻
+```bash
+git clone https://github.com/shradhaa-singh/MyPortfolio.git
+```
 
-📌 Future Improvements
-	•	Add animations
-	•	Improve accessibility
-	•	Add more interactivity
+2. Open the project folder.
+3. Start it in either of these ways:
 
-⸻
+- Open `index.html` directly in a browser
+- Use a local static server such as VS Code Live Server
 
-🙋‍♀️ About Me
 
-I am an engineering student passionate about web development and AI/ML. This portfolio reflects my skills and learning journey.
+## Contact
 
-⸻
-
-📬 Contact
-	•	Email: shradhasingh72558@gmail.com
-	•	LinkedIn: https://www.linkedin.com/in/shradhaasingh/
-	•	GitHub: https://github.com/shradhaa-singh
-
-⸻
+- Email: `shradhasingh72558@gmail.com`
+- LinkedIn: `https://www.linkedin.com/in/shradhaasingh/`
+- GitHub: `https://github.com/shradhaa-singh`
