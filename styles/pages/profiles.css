@@ -1,0 +1,42 @@
+.profiles-grid {
+  margin-top: 1.4rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  text-decoration: none;
+  color: var(--text);
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+.profile-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.profile-label {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+}
+
+.profile-handle {
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.profile-card-placeholder {
+  justify-content: center;
+  min-height: 122px;
+  border-style: dashed;
+}
+
+@media (max-width: 850px) {
+  .profiles-grid {
+    grid-template-columns: 1fr;
+  }
+}

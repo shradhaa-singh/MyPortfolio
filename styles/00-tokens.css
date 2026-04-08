@@ -52,3 +52,15 @@ html[data-theme="paper"] {
   --accent-2: #db6c3f;
   --shadow: 0 20px 45px -30px rgb(79 56 38 / 0.45);
 }
+
+html[data-theme="pastel-pink"] {
+  --bg: #fff4f8;
+  --bg-elev: #ffe8f0;
+  --bg-soft: #ffd8e7;
+  --text: #4c2a39;
+  --muted: #8f6677;
+  --line: #efbfd0;
+  --accent: #ff8fb1;
+  --accent-2: #ffb7cf;
+  --shadow: 0 20px 45px -30px rgb(160 82 116 / 0.28);
+}

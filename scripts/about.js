@@ -2,6 +2,13 @@
   "use strict";
 
   var STORAGE_KEY = "portfolio-theme-v2";
+  var THEME_COLORS = {
+    ocean: "#06121f",
+    sunset: "#1a0d0d",
+    forest: "#07150f",
+    paper: "#f6f0e6",
+    "pastel-pink": "#fff4f8"
+  };
   var root = document.documentElement;
 
   function setTheme(theme) {
@@ -13,6 +20,11 @@
     document.querySelectorAll("[data-set-theme]").forEach(function (button) {
       button.classList.toggle("active", button.getAttribute("data-set-theme") === theme);
     });
+
+    var themeColor = document.querySelector('meta[name="theme-color"]');
+    if (themeColor) {
+      themeColor.setAttribute("content", THEME_COLORS[theme] || THEME_COLORS.ocean);
+    }
   }
 
   function initTheme() {
