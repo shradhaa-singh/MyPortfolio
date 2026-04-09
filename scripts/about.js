@@ -30,6 +30,22 @@
   function initTheme() {
     var fallbackTheme = "ocean";
     var saved = fallbackTheme;
+    var switcher = document.querySelector(".theme-switcher");
+    var trigger = switcher ? switcher.querySelector(".theme-trigger") : null;
+    var palette = document.getElementById("theme-palette");
+
+    function closePalette() {
+      if (!trigger || !palette) return;
+      palette.hidden = true;
+      trigger.setAttribute("aria-expanded", "false");
+    }
+
+    function togglePalette() {
+      if (!trigger || !palette) return;
+      var isOpen = palette.hidden;
+      palette.hidden = !isOpen;
+      trigger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    }
 
     try {
       saved = localStorage.getItem(STORAGE_KEY) || fallbackTheme;
@@ -40,8 +56,27 @@
     document.querySelectorAll("[data-set-theme]").forEach(function (button) {
       button.addEventListener("click", function () {
         setTheme(button.getAttribute("data-set-theme"));
+        closePalette();
       });
     });
+
+    if (trigger && palette) {
+      trigger.addEventListener("click", function () {
+        togglePalette();
+      });
+
+      document.addEventListener("click", function (event) {
+        if (!switcher.contains(event.target)) {
+          closePalette();
+        }
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          closePalette();
+        }
+      });
+    }
   }
 
   function initMobileNav() {

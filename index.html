@@ -290,13 +290,24 @@
     </main>
 
     <aside class="theme-switcher" aria-label="Theme selector">
-      <p>Theme</p>
-      <div class="theme-options">
-        <button type="button" data-set-theme="ocean">Ocean</button>
-        <button type="button" data-set-theme="sunset">Sunset</button>
-        <button type="button" data-set-theme="forest">Forest</button>
-        <button type="button" data-set-theme="paper">Paper</button>
-        <button type="button" data-set-theme="pastel-pink">Pastel</button>
+      <button
+        class="theme-trigger"
+        type="button"
+        aria-expanded="false"
+        aria-controls="theme-palette"
+        aria-label="Open theme palette"
+      >
+        <span class="theme-trigger-icon" aria-hidden="true"></span>
+      </button>
+      <div class="theme-palette" id="theme-palette" hidden>
+        <p>Choose theme</p>
+        <div class="theme-options">
+          <button type="button" data-set-theme="ocean">Ocean</button>
+          <button type="button" data-set-theme="sunset">Sunset</button>
+          <button type="button" data-set-theme="forest">Forest</button>
+          <button type="button" data-set-theme="paper">Paper</button>
+          <button type="button" data-set-theme="pastel-pink">Pastel</button>
+        </div>
       </div>
     </aside>
 
